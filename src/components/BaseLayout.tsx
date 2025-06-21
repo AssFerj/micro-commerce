@@ -1,5 +1,14 @@
-export default function BaseLayout () {
+import BaseHeader from "./BaseHeader"
+
+export default function BaseLayout ({
+    children,
+  }: {
+    children: React.ReactNode
+  }) {
     return (
-        <div>Nav</div>
+        <>
+            <BaseHeader />
+            {children}
+        </>
     )
 }
