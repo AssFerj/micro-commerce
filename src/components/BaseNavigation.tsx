@@ -15,7 +15,6 @@ export default function BaseNavigation() {
 
     const navLinks = [
         { href: "/", label: "Produtos" },
-        { href: "/categorias", label: "Categorias" },
         { href: "/contato", label: "Contato" },
     ];
 
@@ -34,6 +33,9 @@ export default function BaseNavigation() {
                             </Link>
                         </li>
                     ))}
+                    <li>
+                        <Link href="/login" className="link text-primary bg-tertiary hover:bg-secondary hover:text-white rounded px-6 py-2">Login</Link>
+                    </li>
                 </ul>
             </nav>
 
@@ -64,6 +66,9 @@ export default function BaseNavigation() {
                                 </Link>
                             </li>
                         ))}
+                        <li>
+                            <Link href="/login" className="text-2xl text-primary bg-tertiary hover:bg-primary hover:text-white rounded p-4">Login</Link>
+                        </li>
                     </ul>
                 </div>
             )}

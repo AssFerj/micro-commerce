@@ -1,4 +1,5 @@
 import BaseHeader from "./BaseHeader"
+import Footer from "./Footer"
 
 export default function BaseLayout ({
     children,
@@ -9,6 +10,7 @@ export default function BaseLayout ({
         <>
             <BaseHeader />
             {children}
+            <Footer />
         </>
     )
 }

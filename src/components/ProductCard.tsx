@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import PlaceholderSvg from '../../public/placeholder.svg';
 import { ShoppingCart } from 'lucide-react';
 
 interface ProductCardProps {
@@ -10,7 +9,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ imageUrl, name, price }: ProductCardProps) {
     return (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden group border border-gray-200">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden group border border-gray-200 w-80">
             <div className="relative w-full h-48 bg-gray-50 flex items-center justify-center">
                 <Image 
                     src={imageUrl} 
